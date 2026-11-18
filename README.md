@@ -2,7 +2,10 @@
 
 Phát hiện bất thường trên dữ liệu cảm biến máy bơm công nghiệp nhằm cảnh báo sớm trước khi máy hỏng (Predictive Maintenance).
 
-**Môn học:** Khai phá dữ liệu – Đề tài 15
+**Môn học:** Khai phá dữ liệu
+
+**Đề tài:** 15 – Industrial IoT Sensor Anomaly Detection
+
 **Nhóm thực hiện:**
 - B23DCCN069 – Đặng Gia Bảo
 - B23DCDT021 – Vũ Thế Anh
@@ -46,11 +49,19 @@ Mô tả chi tiết từng cột: xem `data_dictionary.pdf`.
 - `sensor_51` chạm giá trị lớn nhất của thang đo khoảng **9 ngày** trước lần hỏng 28/06/2018 – dấu hiệu cảnh báo sớm nhất.
 - Hai lần hỏng 08/07 và 25/07 xảy ra đột ngột, gần như không có dấu hiệu báo trước trong dữ liệu.
 
-## Cách chạy
+## Xem kết quả
+
+Notebook đã lưu sẵn toàn bộ kết quả chạy (bảng, biểu đồ, nhận xét): chỉ cần bấm vào file `.ipynb` trên GitHub để xem, không cần chạy lại.
+
+## Chạy lại (tùy chọn)
+
+Nếu muốn tự chạy lại để kiểm chứng:
 
 1. Mở trang dataset trên Kaggle → **Code → New Notebook**.
 2. **File → Import Notebook** → chọn `Industrial-IoT-Sensor-Anomaly-Detection.ipynb`.
 3. Kiểm tra dataset `pump-sensor-data` đã có ở mục **Input** (nếu chưa: **Add Input**).
 4. **Run All**. Không cần GPU.
+
+Lưu ý: Autoencoder có yếu tố ngẫu nhiên khi huấn luyện nên số liệu khi chạy lại có thể lệch nhẹ so với kết quả đã lưu.
 
 **Thư viện:** pandas, numpy, matplotlib, seaborn, scikit-learn, tensorflow (đều có sẵn trên Kaggle).
